@@ -39,4 +39,54 @@ public class CarTest {
         assertEquals("you have stopped", car.stop());
     }
 
+    @Test
+    public void canGetWheel() {
+        assertEquals(wheel, car.getWheel());
+    }
+
+    @Test
+    public void canGetGearBox() {
+        assertEquals(gearBox, car.getGearBox());
+    }
+
+    @Test
+    public void canGetFuelLevel() {
+        assertEquals(100, car.getFuelLevel());
+    }
+
+    @Test
+    public void canGetPrice() {
+        assertEquals(12000, car.getPrice());
+    }
+
+    @Test
+    public void canGetColour() {
+        assertEquals("red", car.getColour());
+    }
+
+    @Test
+    public void canGetNoOfDoors() {
+        assertEquals(3, car.getNumberOfDoors());
+    }
+
+    @Test
+    public void canSetPrice() {
+        car.setPrice(25000);
+        assertEquals(25000, car.getPrice());
+    }
+
+    @Test
+    public void canSetWheel() {
+        Wheel wheel = new Wheel(WheelType.Chrome, "Rubber", 35);
+        car.setWheel(wheel);
+        assertEquals(wheel, car.getWheel());
+    }
+
+    @Test
+    public void canSetColour() {
+        car.setColour("Pink");
+        assertEquals("Pink", car.getColour());
+    }
+
+
 }

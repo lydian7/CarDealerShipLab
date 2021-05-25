@@ -18,7 +18,7 @@ public abstract class Vehicle implements IMove, IStop, IFuel {
     private String colour;
     private int numberOfDoors;
 
-    public Vehicle(Engine engine, Wheel wheel, Gearbox gearBox, int fuelLevel, int Price, String colour, int numberOfDoors) {
+    public Vehicle(Engine engine, Wheel wheel, Gearbox gearBox, int fuelLevel, int price, String colour, int numberOfDoors) {
         this.engine = engine;
         this.wheel = wheel;
         this.gearBox = gearBox;
@@ -67,5 +67,9 @@ public abstract class Vehicle implements IMove, IStop, IFuel {
 
     public void setFuelLevel(int fuelLevel) {
         this.fuelLevel = fuelLevel;
+    }
+
+    public int getNumberOfDoors() {
+        return numberOfDoors;
     }
 }
