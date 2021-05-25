@@ -3,8 +3,10 @@ package components;
 public class Gearbox {
 
     private String gearNumber;
+    private int gearRange;
 
-    public Gearbox(String gearNumber) {
+    public Gearbox(int gearRange, String gearNumber) {
+        this.gearRange = gearRange;
         this.gearNumber = gearNumber;
 
     }

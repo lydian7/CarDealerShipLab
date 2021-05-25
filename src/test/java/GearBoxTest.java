@@ -10,7 +10,7 @@ public class GearBoxTest {
 
     @Before
     public void before(){
-        gearbox = new Gearbox("6");
+        gearbox = new Gearbox(6,"6");
     }
 
     @Test
